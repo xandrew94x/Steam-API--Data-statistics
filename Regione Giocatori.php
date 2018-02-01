@@ -88,7 +88,7 @@ function salva_su_file($paesi){
 
 define('api_key','--INSERT API KEY HEREI!--');
 $steamID = ;						//-- INSERT STEAM ID FIRST USER!--
-$appname = "PLAYERUNKNOWN'S BATTLEGROUNDS";
+$appname = "PLAYERUNKNOWN'S BATTLEGROUNDS";		// insert the game for the search
 $paesi = array();
 fill_array($steamID, 2000, $appname);
 
