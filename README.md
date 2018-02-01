@@ -25,5 +25,5 @@ sudo apt-get install php
 ## Authors
 
 * **Daniele Fallica** - *Giochi Realmente Utilizzati* - [Linkedin](https://www.linkedin.com/in/daniele-fallica-40b0ab157)
-* **Daniele Fallica** - *Giochi Realmente Utilizzati* - [Linkedin](https://www.linkedin.com/in/adriana-maccarrone-11129b153)
+* **Adriana Maccarrone** - *Giochi Realmente Utilizzati* - [Linkedin](https://www.linkedin.com/in/adriana-maccarrone-11129b153)
 * **Andrea Sciuto** - *Ultimi Giochi Giocati* - [Linkedin](https://www.linkedin.com/in/andrea-sciuto-0594b6136)
