@@ -1,3 +1,4 @@
+<?php
 function controllo($nome_gioco){ 
 	global $giochi;
 	$control = 0;
@@ -21,7 +22,6 @@ function fill_array($gamer){
 	$url_friends =  @file_get_contents("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=".api_key."&steamid=".$gamer."&relationship=friend");
 	$array_friends = json_decode($url_friends,true);		
 	for($i = 0; $i < sizeof($array_friends['friendslist']['friends']); $i++){
-		//echo $i, "\t",$array_friends['friendslist']['friends'][$i]["steamid"], "\n";
 		$url_friends_games =  @file_get_contents("http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=".api_key."&steamid=".$array_friends['friendslist']['friends'][$i]["steamid"]."");
 		$array_friends_games = json_decode($url_friends_games,true);
 		if(@$array_friends_games["response"]["total_count"]>0){
@@ -31,7 +31,6 @@ function fill_array($gamer){
 		}
 	}
 }
-//$giochi = array(0 => array('gioco'=>'Dota','count'=>11), 1 => array('gioco'=>'aaa','count'=>131));
 $giochi = array();
 $fp = fopen("prova.txt", 'w');
 fill_array($first_gamer);
